@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    background: url(./assets/images/background.png);
+    height: 100vh;
+    color: #6ea8fe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header h1{
+    font-size: 5rem;
+}
+.header p{
+    font-size: 2rem;
+}
+.summary{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+    padding-top: 100px;
+    width: 80%;
+    margin: auto;
+}
+.summary img{
+    border-radius: 50%;
+    margin-bottom: 28px;
+}
+.education,.skills,.awards{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.education h2,.skills h2,.awards h2{
+    padding-bottom: 20px;
+}
+.projects{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+@media (max-width:1200px){
+    .header h1,p{
+        font-size: 4rem;
+        text-align: center;
+    }
+    .summary p{
+        font-size: 2rem;
+    }
+    .education,.skills,.awards,.projects{
+        align-items: center;
+    }
+    .container{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        text-align: center;
+        align-self: center;
+        width: min-content;
+    }
+    .card p{
+        font-size: 1rem;
+    }
+
+    footer p{
+        font-size: 1rem;
+    }
+}
+.projects h2{
+    margin-bottom: 50px;
+}
+.card img{
+    width: 18rem;
+    height: 10rem;
+    border-radius: 20px 20px 0 0;
+}
+.container{
+   display: flex;
+   justify-content: space-evenly;
+}
+.card p{
+    margin: 20px;
+}
+.card{
+    max-width: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.card:hover{
+    box-shadow: 1px 1px 20px 1px #6ea8fe;
+    cursor: pointer;
+}
+.btn{
+    border-radius: 20px;
+    border: 1px solid #6ea8fe;
+    margin: 12px 14px;
+}
+.btn:hover{
+    border-radius: 20px;
+    border: 1px solid #6ea8fe;
+    background-color:#6ea8fe;
+    color: white;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.contact a{
+    text-decoration: none;
+    font-size: 30px;
+}
+.contact a:hover{
+    transform: scale(115%);
+}
+footer{
+    text-align: center;
+}
